@@ -1,0 +1,20 @@
+﻿@page
+@model Joy_flore.SaveJsonFile.Pages.FormModel
+@{
+}
+
+<form method="Post">
+    <label asp-for="Details">BOOK INPUT</label>
+    <input type="text" class="form-control" id="@Model.Details?.Book" placeholder="Bible">
+   
+    <label asp-for="Details">CHAPTER INPUT</label>
+    <input type="text" class="form-control" id="@Model.Details?.Chapter" placeholder="Chapter">
+
+    <label asp-for="Details">VERSE</label>
+    <input type="text" class="form-control" id="@Model.Details?.Verse" placeholder="Verse">
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+   
+    </form> 
